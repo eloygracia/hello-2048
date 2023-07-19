@@ -24,8 +24,8 @@ jobs:
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         run: |
-          docker build -t ghcr.io/2000ghz/hello-2048/hello-2048:latest .
-          docker push ghcr.io/2000ghz/hello-2048/hello-2048:latest
+          docker build -t ghcr.io/eloygracia/hello-2048/hello-2048:latest .
+          docker push ghcr.io/eloygracia/hello-2048/hello-2048:latest
 
       - name: Set up AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
