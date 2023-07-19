@@ -1,7 +1,7 @@
 version: "3"
 services:
   hello-2048:
-    image: ghcr.io/2000ghz/hello-2048/hello-2048:latest
+    image: ghcr.io/eloygracia/hello-2048/hello-2048:latest
     build: .
     ports:
       - "8080:8080"
